@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">{{message}}
+        <h3>NBA</h3>
+        <div v-if="seen">Hello NBA</div>
+        <ol>
+            <li v-for="game in games">
+                {{game.title}} {{game.price}}
+            </li>
+        </ol>
+        <p>Your fav game is: {{mygame}}</p>
+        <!-- <input v-model="mygame"> -->
+        <button v-on:click="btnClick('My World')">My World</button>
+        <button v-on:click="btnClick('NBA 2k19')">NBA 2K19</button>
+        <button v-on:click="btnClick('PES 2019')">PES 2019</button>
+    </div>
+<a href="udemy.html"><h3>Go back</h3></a>
+    <script>
+        var app = new Vue({
+            el: '#app',
+
+            data: {
+                seen: true,
+                message: 'Hello Vue.js',
+                games: [{ title: 'NBA 2k19', price: 599 },
+                { title: 'FIFA', price: 499 }],
+                mygame: 'NBA 2k19',
+            },
+            methods: {
+                btnClick: function (pgame) {
+                    this.mygame = pgame
+                }
+            }
+
+
+        })
+    </script>
+    <footer>Website made by Su</footer>
+</body>
+
+</html>

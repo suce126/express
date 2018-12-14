@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+}
+img{
+    width: 400px;
+    height: 370px;
+    margin: 5px;
+    transition: all 1s;
+}
+img:hover{
+    transform:scale(1.1); 
+}
+.container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+h1{
+    font-family: fantasy;
+    font-size: 3em;
+    border-bottom: 2px solid palevioletred;
+    width: 400px;
+    text-align: center;
+    box-shadow: 10px,10px,20px,palevioletred;
+    margin: 10px;
+}
+footer{
+    height: 50px;
+    text-align: center;
+}

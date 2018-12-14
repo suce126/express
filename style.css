@@ -1,0 +1,18 @@
+h3{
+    color: rgb(84, 216, 84);
+}
+p{
+    color: darkslateblue
+}
+body{
+    background-image: url(DSC_0154\ copy.JPG);
+    background-size: cover;
+}
+footer{
+    clear: both;
+    text-align: center;
+}
+img{
+    width: 450px;
+    height: 450px;
+}
